@@ -1,0 +1,19 @@
+<project
+    name = "dbtest"
+    description = "PoC about using embeded mariadb in make check"
+    script = "zproject.gsl"
+    email = "bios@eaton.com"
+    url = "https://eaton.com/"
+    license = "GPL-2.0+"
+    >
+
+    <include filename = "license.xml" />
+    <version major = "0" minor = "1" patch = "0" />
+    <use project = "malamute" />
+
+    <class name = "dbklass_test" state = "stable" private="1" >DB API test using embeded MariaDB</class>
+    <class name = "dbklass" state = "stable" >DB API</class>
+    <main name = "dbtest">
+    </main>
+
+</project>
